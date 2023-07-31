@@ -111,9 +111,13 @@ the maze. You will probably want to make use of the Node class in search.py.
 Experiments: Test your code using:
 
 python pacman.py -l tinyMaze -p SearchAgent -a fn=breadthFirstSearch
+
 python pacman.py -l smallMaze -p SearchAgent -a fn=breadthFirstSearch
+
 python pacman.py -l mediumMaze -p SearchAgent -a fn=breadthFirstSearch -z .5 --frameTime 0
+
 python pacman.py -l bigMaze -p SearchAgent -a fn=breadthFirstSearch -z .5 --frameTime 0
+
 
 
 Problem 2: A* Search
@@ -130,19 +134,20 @@ Experiments:
 
 
 python pacman.py -l tinyMaze -p SearchAgent -a fn=astar,heuristic=manhattanHeuristic
+
 python pacman.py -l smallMaze -p SearchAgent -a fn=astar,heuristic=manhattanHeuristic
+
 python pacman.py -l mediumMaze -z .5 -p SearchAgent -a fn=astar,heuristic=manhattanHeuristic --frameTi
 me 0
+
 python pacman.py -l bigMaze -z .5 -p SearchAgent -a fn=astar,heuristic=manhattanHeuristic --frameTime 0
+
 
 A few additional notes:
 • If Pacman moves too slowly for you, try the option --frameTime 0.
+
 • All of your search functions need to return a list of actions that will lead the agent from the start to the
 goal.
-
-
-
-
 
 
 =============

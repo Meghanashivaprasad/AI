@@ -156,31 +156,52 @@ Introduction
 COEN 266 Artificial Intelligence Group Homework #2 Minimax Game
 In this GROUP assignment, you will design a minimax algorithm for Pacman (player-MAX), who plays a game with three ghosts (player-MINs). The game tree will have MAX nodes and MIN nodes. In general, MAX nodes will call a “max” function to collect the largest value from its successors, and MIN nodes will call a “min” function to collect the minimum value from its successors.
 You can download and unzip all the code and supporting files from multiagent.zip. Implement the following function in Class MinimaxAgent, in multiAgents.py
+
 def getAction(self, gameState):
 ...
-# this function will
+this function will
+
 • recursively call a “max” function and a “min” function.
 • propagate the “leaf” node values to upper layers, until the root node is reached. • finally, return the best action for player-max (Pacman) at the root node.
+
 Files you’ll edit:
-multiAgents.py Where your multi-agent search agent will reside.
+
+multiAgents.py ---->>Where your multi-agent search agent will reside.
+
 Files you might want to look at:
-pacman.py The main file that runs Pacman games. This file also describes a Pacman GameState class, which you will use extensively in this assignment.
-game.py The logic behind how the Pacman world works. This file describes several supporting classes like AgentState, Agent, Direction, and Grid.
-util.py Useful data structures for implementing search algorithms. You may find some functions defined here to be useful.
+
+pacman.py ----->>The main file that runs Pacman games. This file also describes a Pacman GameState class, which you will use extensively in this assignment.
+
+game.py------>> The logic behind how the Pacman world works. This file describes several supporting classes like AgentState, Agent, Direction, and Grid.
+
+util.py ------>>Useful data structures for implementing search algorithms. You may find some functions defined here to be useful.
+
                   
- Supporting files you can ignore:
-   graphicsDisplay.py graphicsUtils.py textDisplay.py ghostAgents.py keyboardAgents.py layout.py
+Supporting files you can ignore:
+
+graphicsDisplay.py----->>graphicsUtils.py textDisplay.py ghostAgents.py keyboardAgents.py layout.py
+
 Graphics for Pacman
+
 Support for Pacman graphics
+
 ASCII graphics for Pacman
+
 Agents to control ghosts
+
 Keyboard interfaces to control Pacman
+
 Code for reading layout files and storing their contents
-                  Task: Minimax Agent
- Now you will write an adversarial search agent in the provided   class stub
+
+Task: Minimax Agent
+ Now you will write an adversarial search agent in the provided class stub
 in multiAgents.py. Your minimax agent should work with any number of ghosts. In particular, your minimax tree will have multiple min layers (one for each ghost) for every max layer.
+
 Your code should also expand the game tree to an arbitrary depth. Score the leaves of your minimax tree with the supplied . MinimaxAgent extends MultiAgentSearchAgent, which gives access to   (the number of search plies of the game tree). A single search ply (self.depth=1) is considered to be one Pacman move and all the ghosts’ responses, so a search with self.depth=2 will involve Pacman and each ghost moving two times.
-    scoreEvaluationFunction
+
+
+scoreEvaluationFunction
+
 self.depth
 MinimaxAgent
  Make sure your minimax code makes reference to variable self.depth where appropriate as this variable is populated in response to command line options.

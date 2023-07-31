@@ -52,16 +52,27 @@ util.py Useful data structures for implementing search algorithms.
 Files you will not edit
 
 agentTestClasses.py ----->>Autograding test classes
+
 graphicsDisplay.py ----->>Graphics for Pacman
+
 graphicsUtils.py ---->Support for Pacman graphics
+
 textDisplay.py ------->ASCII graphics for Pacman
+
 ghostAgents.py-------> Agents to control ghosts
+
 keyboardAgents.py ----->Keyboard interfaces to control Pacman
+
 layout.py ------>Code for reading layout files and storing their contents
+
 autograder.py ----->Project autograder
+
 testParser.py ------->Parses autograder test and solution files
+
 testClasses.py ------>General autograding test classes
+
 test_cases/ ------->Directory containing the test cases for each question
+
 Academic Dishonesty: We will be checking your code against other groups’ submissions in the class for
 logical redundancy. If you copy someone else’s code and submit it with minor changes, we will know, and
 we will pursue the strongest consequences available to us.

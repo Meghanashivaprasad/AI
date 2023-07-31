@@ -4,23 +4,32 @@ Group Homework #1 Search
 This is a GROUP assignment. The code for this assignment consists of several Python files, some of which
 you will need to read and understand in order to complete the assignment, and some of which you can ignore.
 You can download and unzip all the code and supporting files search_and_games.zip.
+
 Files to Edit: You will edit portions of search.py, where all your search algorithms will reside. There is no
 need to change the other files/code in the source code folder.
+
+
+
 Submission:
 1. Submit a pdf report to Camino (for the format of the pdf report, please refer to
 GroupHW1_submission_sample.pdf).
+
 2. Submit all source code needed (with search.py modified by you) to generate all results of the
 Experiments in Problem 1 and Problem 2 as a .zip file to Camino. We will test run your submitted
 code, so make sure it works.
+
 The following items are essential components of your algorithm. Please explain them in the submitted pdf
 report.
+
 • For Breadth-First Search:
+
 o How Frontier is defined
 o How graph search is implemented
 o How successors (children nodes) of the current node are generated and how they enter the
 Frontier queue
 o How goalTest is called
 o How the solution path is returned
+
 • For A* Search:
 o How g, h, and f values are obtained for a node
 o How Frontier is defined
@@ -29,16 +38,21 @@ o How successors (children nodes) of the current node are generated and how they
 Frontier queue
 o How goalTest is called
 o How the solution path is returned
+
 Files you might want to look at
-pacman.py The main file that runs Pacman games. This file describes a Pacman GameState class,
+pacman.py ->>>>>>>>The main file that runs Pacman games. This file describes a Pacman GameState class,
 which you use in this project.
-game.py The logic behind how the Pacman world works. This file describes several supporting
+
+game.py->>>>>>> The logic behind how the Pacman world works. This file describes several supporting
 classes like AgentState, Agent, Direction, and Grid.
-searchAgents.py Where all your search-based agents will reside.
+
+searchAgents.py->>>>>> Where all your search-based agents will reside.
 util.py Useful data structures for implementing search algorithms.
+
 Files you will not edit
-agentTestClasses.py Autograding test classes
-graphicsDisplay.py Graphics for Pacman
+
+agentTestClasses.py ----->>Autograding test classes
+graphicsDisplay.py ----->>Graphics for Pacman
 graphicsUtils.py Support for Pacman graphics
 textDisplay.py ASCII graphics for Pacman
 ghostAgents.py Agents to control ghosts
